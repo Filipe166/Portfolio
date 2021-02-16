@@ -1,0 +1,266 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin-right: 0;
+}
+
+main {
+  background-image: url(images/1-shape.png);
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: 41%;
+  width: auto;
+}
+
+h1 {
+  font-weight: bolder;
+  font-size: 40px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2%;
+  margin-right: 15%;
+  margin-left: 10%;
+  padding-bottom: 140px;
+}
+
+header ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header ul li {
+  margin: 5px;
+}
+
+header ul li a {
+  font-size: 22px;
+  opacity: 0.5;
+  text-decoration: none;
+  padding: 15px 15px;
+  color: black;
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.content .content_info {
+  margin-top: 40px;
+  padding-top: 100px;
+  margin-left: 10%;
+}
+
+.content .content_info h2 {
+  font-size: 60px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.content_info p {
+  font-size: 20px;
+  text-align: left;
+  color: #888888;
+  padding-top: 20px;
+  width: 70%;
+}
+
+.btn_start {
+  text-decoration: none;
+  color: white;
+  padding: 20px 40px;
+  margin-top: 30px;
+  background: #338CF2 0% 0% no-repeat padding-box;
+  border-radius: 20px;
+  display: inline-block;
+}
+
+.product_img {
+  width: 90%;
+}
+
+.info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.info article {
+  width: 400px;
+  padding: 20px 60px;
+  text-align: center;
+}
+
+.info article h3 {
+  font-weight: bolder;
+}
+
+.info article p {
+  color: #888888;
+}
+
+.info article a {
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  color: black;
+  margin: 15px;
+}
+
+#info_blue {
+  color: #3E8FF9;
+}
+
+.mobile_app {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  padding-top: 5%;
+  text-align: center;
+}
+
+.mobile_app .content_info2 {
+  width: 80%;
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 10%;
+  margin-left: 6%;
+  padding-right: 10%;
+}
+
+.mobile_app .content_info2 h2 {
+  font-weight: bolder;
+  font-size: 60px;
+}
+
+.mobile_app .content_info2 p {
+  font-size: 20px;
+  color: #888888;
+  padding-top: 15px;
+}
+
+.mobile_app .content_info2 a {
+  text-decoration: none;
+  color: #3E8FF9;
+  font-weight: bolder;
+  padding: 50px 15px;
+}
+
+.mobile_app .product_img2 {
+  width: 55%;
+  background-image: url(images/2-shape.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding: 0 30px;
+  min-width: 60vh;
+  margin-top: 5%;
+}
+
+.mobile_app .product_img2 .phone {
+  padding-left: 12%;
+}
+
+.client_title {
+  width: 50%;
+  display: block;
+  text-align: left;
+  margin-left: 10%;
+  padding: 30px 30px;
+}
+
+.client_title h2 {
+  font-size: 60px;
+  font-weight: bolder;
+}
+
+.client_title p {
+  font-size: 20px;
+  color: #888888;
+  text-align: left;
+  width: 80%;
+  padding: 20px 0px;
+}
+
+.client {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10%;
+}
+
+.client .quality {
+  width: 30%;
+}
+
+.client div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 10px;
+}
+
+.client .text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.product_img3 {
+  overflow: visible;
+  margin-left: 20%;
+}
+
+.product_img3 img {
+  width: 95%;
+  padding: 10px 20px;
+  background-image: url(images/3-shape.png);
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+/*# sourceMappingURL=style.css.map */
