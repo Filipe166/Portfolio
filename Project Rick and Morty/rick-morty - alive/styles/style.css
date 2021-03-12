@@ -1,0 +1,56 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../assets/thumb-1920-909641.png);
+}
+main{
+    margin: auto;
+    margin-top: 20px;
+    width: 100vh;
+}
+#app{
+    display: flex;
+}
+#app div{
+    border-radius: 10px;
+    background-color: #634190;
+    height: 100%;
+    width: 300px;
+    padding: 0px;
+    
+}
+#app img{
+    border-radius: 10px;
+}
+#app h2{
+    color: #0cb2fa;
+    padding: 5px;
+}
+
+#app p{
+    color: white;
+    padding: 5px;
+}
+
+.nav-bar{
+    padding-bottom: 50px;
+}
+.nav-bar nav ul{
+    text-transform: uppercase;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gold;
+    font-size: 20px;
+}
+
+.logo{
+    width: 200px;
+}
