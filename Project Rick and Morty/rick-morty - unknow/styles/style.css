@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(../assets/rick_and_morty-2-660x330.no.jpg);
+    background-repeat: repeat;
+    background-position:unset;
+}
+#footer{
+    height: 200px;
+    width: 100%;
+    background-image: url(../assets/rick_and_morty-2-660x330.jpg);
+    background-repeat: repeat;
+    background-position: bottom;
+}
+main{
+    margin: auto;
+    margin-top: 20px;
+    width: 100vh;
+}
+#app div section{
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    row-gap: 30px;
+    column-gap: 30px;
+      
+}
+#app div section article{
+    border-radius: 10px;
+    background-color: #2596be;
+    height: 100%;
+    width: 300px;
+    padding: 0px;
+}
+#app img{
+    border-radius: 10px;
+}
+#app h2{
+    color: gold;
+    padding: 5px;
+}
+
+#app p{
+    color: white;
+    padding: 5px;
+}
+
+.nav-bar{
+    padding-bottom: 50px;
+}
+.nav-bar ul li a{
+    cursor: pointer;
+    color: gold;
+    text-decoration: none;
+}
+.nav-bar nav ul{
+    text-transform: uppercase;
+    font-weight: 600;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gold;
+    font-size: 20px;
+}
+
+.logo{
+    width: 200px;
+}
