@@ -59,7 +59,7 @@ class RickMortyGenerator extends React.Component {
                                 <h2>Name: {char.name}</h2>
                                 <p>Species :{char.species}</p>
                                 <p>Status: {char.status}</p>
-                                <p>Type :{char.type}</p>
+                                <p>Type : {char.type}</p>
                                 <p>Gender: {char.gender}</p>
                                 <p>Location: {char.location.name}</p>
                                 <p>Origin: {char.origin.name}</p>
@@ -111,7 +111,7 @@ class RickMortyGenerator extends React.Component {
                                 <h2>Name: {char.name}</h2>
                                 <p>Species :{char.species}</p>
                                 <p>Status: {char.status}</p>
-                                <p>Type :{char.type}</p>
+                                <p>Type : {char.type}</p>
                                 <p>Gender: {char.gender}</p>
                                 <p>Location: {char.location.name}</p>
                                 <p>Origin: {char.origin.name}</p>
