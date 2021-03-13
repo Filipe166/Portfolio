@@ -71,3 +71,36 @@ main{
 .logo{
     width: 200px;
 }
+@media screen and (max-width: 968px) {
+    #app div section{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+        width: 50%;
+    }
+
+    main{
+        width: 50%;
+    }
+    .nav-bar nav{
+        width: 100%;
+        margin: auto;
+    }
+
+    .nav-bar nav ul{
+        width: 100%;
+        margin: auto;
+        text-transform: uppercase;
+        font-weight: 600;
+        list-style: none;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        align-items: center;
+        color: gold;
+        font-size: 20px;
+    }
+          
+}
