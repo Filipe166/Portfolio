@@ -4,17 +4,10 @@ class RickMortyGenerator extends React.Component {
         super(props);
 
         this.state = {
-            name: 'Rick Sanchez',
-            status: 'Alive',
-            species: 'Human',
-            type: '',
-            gender: 'Male',
-            origin: {
-                name: 'Earth',
-                url: 'https://rickandmortyapi.com/api/location/20',
-            },
-            image: 'https://rickandmortyapi.com/api/character/avatar/1.jpeg',
-            episodes: []
+            characters: [],
+            characters2: [],
+            characters3: [],
+            characters4: [],
 
         };
     }
@@ -24,23 +17,29 @@ class RickMortyGenerator extends React.Component {
 
     async getChar() {
         const res = await fetch('https://rickandmortyapi.com/api/character/');
+        const res2 = await fetch('https://rickandmortyapi.com/api/character/?page=2');
+        const res3 = await fetch('https://rickandmortyapi.com/api/character/?page=3');
+        const res4 = await fetch('https://rickandmortyapi.com/api/character/?page=4');
         const episodesRes = await fetch('https://rickandmortyapi.com/api/episode');
         const jsonRes = await res.json();
+        const jsonRes2 = await res2.json();
+        const jsonRes3 = await res3.json();
+        const jsonRes4 = await res4.json();
         const jsonEpisodes = await episodesRes.json();
         const episodes = jsonEpisodes.results;
-        const character = jsonRes.results[0];
-        console.log(character);
-        console.log(episodes);
+        const characters = jsonRes.results;
+        const characters2 = jsonRes2.results;
+        const characters3 = jsonRes3.results;
+        const characters4 = jsonRes4.results;
+        console.log(characters);
+        console.log(characters2);
+        console.log(characters3);
+        console.log(characters4);
         this.setState(() => ({
-            name: character.name,
-            status: character.status,
-            species: character.species,
-            type: character.type,
-            gender: character.gender,
-            origin: character.origin,
-            location: character.location.name,
-            episodes: character.episode,
-            image: character.image
+            characters: characters,
+            characters2: characters2,
+            characters3: characters3,
+            characters4: characters4,
         }))
     }
     episodeName(idParam) {
@@ -49,27 +48,79 @@ class RickMortyGenerator extends React.Component {
     // HTML
     render() {
         return (
-            <ul>
-                <div>
-                    <img
-                        src={this.state.image}
-                    ></img>
-                    <h2>Name: {this.state.name}</h2>
-                    <p>Status: {this.state.status}</p>
-                    <p>Species :{this.state.species}</p>
-                    <p>Type :{this.state.type}</p>
-                    <p>Gender: {this.state.gender}</p>
-                    <p>Origin: {this.state.origin.name}</p>
-                    <p>Location: {this.state.location}</p>
-                    <p>Episodes:
-                    {this.state.episodes.map(ep => {
-                        return (
-                            <span>{ep.split("/")[5]}, </span>
-                        )
-                    })}
-                    </p>
-                </div>
-            </ul>
+            <div>
+                <section>
+                    {
+                        this.state.characters.map((char) => (
+                            <article>
+                                <img
+                                    src={char.image}
+                                ></img>
+                                <h2>Name: {char.name}</h2>
+                                <p>Species :{char.species}</p>
+                                <p>Status: {char.status}</p>
+                                <p>Type :{char.type}</p>
+                                <p>Gender: {char.gender}</p>
+                                <p>Location: {char.location.name}</p>
+                                <p>Origin: {char.origin.name}</p>
+
+                            </article>
+                        ))
+                    }
+
+                    {
+                        this.state.characters2.map((char) => (
+                            <article>
+                                <img
+                                    src={char.image}
+                                ></img>
+                                <h2>Name: {char.name}</h2>
+                                <p>Species :{char.species}</p>
+                                <p>Status: {char.status}</p>
+                                <p>Type :{char.type}</p>
+                                <p>Gender: {char.gender}</p>
+                                <p>Location: {char.location.name}</p>
+                                <p>Origin: {char.origin.name}</p>
+
+                            </article>
+                        ))
+                    }
+                    {
+                        this.state.characters3.map((char) => (
+                            <article>
+                                <img
+                                    src={char.image}
+                                ></img>
+                                <h2>Name: {char.name}</h2>
+                                <p>Species :{char.species}</p>
+                                <p>Status: {char.status}</p>
+                                <p>Type :{char.type}</p>
+                                <p>Gender: {char.gender}</p>
+                                <p>Location: {char.location.name}</p>
+                                <p>Origin: {char.origin.name}</p>
+
+                            </article>
+                        ))
+                    }
+                    {
+                        this.state.characters4.map((char) => (
+                            <article>
+                                <img
+                                    src={char.image}
+                                ></img>
+                                <h2>Name: {char.name}</h2>
+                                <p>Species :{char.species}</p>
+                                <p>Status: {char.status}</p>
+                                <p>Type :{char.type}</p>
+                                <p>Gender: {char.gender}</p>
+                                <p>Location: {char.location.name}</p>
+                                <p>Origin: {char.origin.name}</p>
+
+                            </article>
+                        ))
+                    }
+                </section>
+            </div>
         );
     }
 }
