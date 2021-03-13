@@ -89,6 +89,7 @@ main{
     .nav-bar nav{
         width: 100%;
         margin: auto;
+        padding-top: 20px;
     }
 
     .nav-bar nav ul{
