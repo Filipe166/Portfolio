@@ -58,6 +58,7 @@ main{
     text-decoration: none;
 }
 .nav-bar nav ul{
+    width: 99.5%;
     text-transform: uppercase;
     font-weight: 600;
     list-style: none;
