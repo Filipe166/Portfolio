@@ -1,0 +1,17 @@
+{
+    "name": "Rick and Morty API",
+    "short_name": "R&M",
+    "start_url": "index.html",
+    "display": "standalone",
+    "background_color": "#5900b3",
+    "theme_color": "black",
+    "scope": ".",
+    "description": "This is a Rick and Morty API",
+    "icons": [
+        {
+            "src": "assets/rickmorty-icon.jpg",
+            "sizes": "1280x1280",
+            "type": "image/png"
+        }
+    ]
+}
